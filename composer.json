@@ -1,0 +1,18 @@
+{
+  "name": "synolia/exercice",
+  "description": "Simple test for REST API with sugar CRM",
+  "authors": [
+    {
+      "name": "Arnaud Chiron",
+      "email": "arnaud@portfolio-webmaster.fr"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^6.5"
+  },
+  "autoload": {
+    "classmap": [
+      "php"
+    ]
+  }
+}

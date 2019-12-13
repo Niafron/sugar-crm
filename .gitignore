@@ -1,0 +1,10 @@
+#IDE
+.editorconfig
+/.vs
+/.idea
+
+#VENDOR
+/vendor
+
+#TOKEN FILE
+/php/.token
