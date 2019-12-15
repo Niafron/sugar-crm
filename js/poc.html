@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>POC JS SUGAR API REST</title>
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <h1>
+    POC JS SUGAR API REST
+  </h1>
+  <hr>
+  <br>
+  <p id="first_message">
+    Vous devez commencer par obtenir un token pour interroger l'api sugar.
+  </p>
+  <br>
+  <div>
+    <button id="get_token" type="button">Obtenir un nouveau token</button>
+    <button id="clear_token" type="button" style="display: none;">Supprimer le token local</button>
+  </div>
+  <br>
+  <div id="contacts_block">
+    <hr>
+    <p>
+      Récupérer la liste des contacts (nom, prénom, adresse, email) dont le prénom contient "a" ou le nom contient "b".
+    </p>
+    <button id="get_contacts" type="button">Lister les contacts</button>
+    <br>
+    <ul id="contacts_list"></ul>
+  <div>
+
+  <!-- build:js -->
+  <script src="main.js"></script>
+  <!-- endbuild -->
+
+</body>
+
+</html>
