@@ -25,8 +25,6 @@ class ControllerCases
         $uri = '/Contacts/'.$contactId.'/link/cases?'.$httpQuery;
         $response = $this->makeRequest('GET', $uri);
 
-        //var_dump($response->getBody()->getContents());
-
         return json_decode($response->getBody()->getContents())->records;
     }
 

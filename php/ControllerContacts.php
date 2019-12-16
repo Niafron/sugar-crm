@@ -9,7 +9,7 @@ class ControllerContacts
     use Connector;
 
     /**
-     * List 20 contacts max with first name starting with "a" or last name starting with "b"
+     * List 20 contacts max with first name containing an "a" or last name containing a "b"
      * @return array
      * @throws \Exception
      */
@@ -23,7 +23,7 @@ class ControllerContacts
             "favorites" => false,
             "my_items" => false,
         ]);
-        $filter = '&filter[0][$or][0][first_name][$starts]=A&filter[0][$or][1][last_name][$starts]=Z';
+        $filter = '&filter[0][$or][0][first_name][$contains]=a&filter[0][$or][1][last_name][$contains]=b';
         $uri = '/Contacts?'.$httpQuery.$filter;
         $response = $this->makeRequest('GET', $uri);
 
